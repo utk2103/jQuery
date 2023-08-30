@@ -28,9 +28,9 @@ console.log($("img").attr("src"))
 $("a").attr("href", "https://www.yahoo.com");
 
 // Adding event listener to jQuery
-$("h1").click(function(){
-    $("h1").css("color", "purple")
-})
+// $("h1").click(function(){
+//     $("h1").css("color", "purple")
+// })
 
   //using javascript
 // for (var i = 0; i<5; i++) {
@@ -58,3 +58,10 @@ $("h1").on("mouseover", function(){
 // $("h1").after(Heyyaaa);
 // $("h1").prepend(content); 
 // $("h1").append(content);
+
+
+// animations using jquery
+$("button").on("click", function () { 
+    $("h1").slideDown();       // hide(), show(), fadeout(), fadeein(), fadetoogle(), animate(opacity:), 
+    //https://www.w3schools.com/jquery/jquery_ref_effects.asp
+});
